@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roll, Die</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!--link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">-->
+    <style>
+    body {
+        padding-top: 20px;
+    }
+    </style>
+  </head>
+  <body>
+      <!--<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Roll, Die</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/d4">d4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/d6">d6</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/d8">d8</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/d10">d10</a>
+        </li>
+        <li>
+          <a class="nav-link" href="/2d6">2d6</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/d12">d12</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/d20">d20</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/d100">d100</a>
+        </li>
+    </div>
+</nav>-->
+    <div class="container">
+      {% block container %}{% endblock %}
+    </div>
+    <div class="container">
+        <div class="well">
+        <p><a href="/d4"><button class="btn btn-primary btn-block" type="button" type="button" class="btn btn-primary"><span class="badge badge-light">Roll d4</span></button></a></p>
+
+        <p><a href="/d6"><button type="button" type="button" class="btn btn-primary btn-block"> <span class="badge badge-light">Roll d6</span></button></a></p>
+
+        <p><a href="/d8"><button type="button" type="button" class="btn btn-primary btn-block"><span class="badge badge-light">Roll d8</span></button></a></p>
+
+        <p><a href="/d10"><button type="button" type="button" class="btn btn-primary btn-block"><span class="badge badge-light">Roll d10</span></button></a></p>
+
+        <p><a href="/2d6"><button type="button" type="button" class="btn btn-primary btn-block"><span class="badge badge-light">Roll 2 d 6</span></button></a></p>
+
+        <p><a href="/d12"><button type="button" type="button" class="btn btn-primary btn-block"><span class="badge badge-light">Roll d12</span></button></a></p>
+
+        <p><a href="/d20"><button type="button" type="button" class="btn btn-primary btn-block"><span class="badge badge-light">Roll d20</span></button></a></p>
+
+        <p><a href="/d100"><button type="button" type="button" class="btn btn-primary btn-block"><span class="badge badge-light">Roll d100</span></button></a></p>
+    </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js') }}"></script>
+  </body>
+</html>
